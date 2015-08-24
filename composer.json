@@ -9,6 +9,7 @@
         "leds-oauth2"
     ],
     "homepage": "https://github.com/ledsinclouds/LedsOAuth2.git",
+    "minimum-stability": "dev",
     "repositories": [
 		{
 			"type": "vcs", 
