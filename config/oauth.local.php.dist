@@ -1,0 +1,52 @@
+<?php
+
+return array(
+    'social_auth' => array(
+        'clients' => array(
+            //'github' => array(
+				//'base_url' => 'https://github.com/login/oauth/authorize',
+                //'client_id' => '',
+                //'client_secret' => '',
+                //'redirect_uri' => '/oauth/handle',
+                //'scope' => 'user:email',
+            //),
+            'google' => array(
+				'base_url' => 'https://accounts.google.com',
+                'client_id' => '',
+                'client_secret' => '',
+                'redirect_uri' => '/oauth/handle',
+                'scope' => 'https://www.googleapis.com/auth/userinfo.profile',
+                //'scope' => array('https://www.googleapis.com/auth/userinfo.email', 'https://www.googleapis.com/auth/userinfo.profile'),
+            ),
+            'facebook' => array(
+				'base_url' => 'https://www.facebook.com/dialog/oauth',
+                'client_id' => '',
+                'client_secret' => '',
+                'redirect_uri' => '/oauth/handle',
+                'scope' => array('email', 'public_profile'),
+            ),
+            //'linkedin' => array(
+				//'base_url' => 'https://www.linkedin.com',
+                //'client_id' => '',
+                //'client_secret' => '',
+                //'redirect_uri' => '/oauth/handle',
+                //'scope' => 'r_emailaddress',
+            //),
+            //'twitter' => array(
+				//'base_url' => 'https://www.linkedin.com',
+                //'client_id' => '',
+                //'client_secret' => '',
+                //'redirect_uri' => '/oauth/handle',
+                //'scope' => 'r_emailaddress',
+            //),
+        ),
+	),
+	'widget' => array(
+		'details_box' => array(
+			'container' => 'container',
+			'col' => 'col-md-6 col-md-offset-3',
+			'panel' => 'panel panel-default object-panel',
+			'box' => 'widgetbow'
+		)
+	)
+);

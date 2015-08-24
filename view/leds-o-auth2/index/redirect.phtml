@@ -1,0 +1,35 @@
+
+<?php 
+$title = 'Oauth2 Handle';
+$this->headTitle($title);
+?>
+<header>
+    <h1><?php echo $title ?></h1>
+</header>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel object-panel">
+            <div class="panel-body">
+                <p>
+                    You ask the provider: <b style="font-size: 1.2em"><?php echo htmlentities(ucfirst($provider)) ?></b>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel object-panel">
+            <div class="panel-body">
+                <ul>
+                    <li>Provider Base Url: <b><?php echo htmlentities($client['base_url']); ?></b></li>
+                    <li>Client Id: <b><?php echo htmlentities($client['client_id']); ?></b></li>
+                    <li>Client Secret: <b><?php echo htmlentities($client['client_secret']); ?></b></li>
+                    <li>Redirect Uri: <b><?php echo htmlentities($client['redirect_uri']); ?></b></li>
+                    <li>Scope: <b><?php echo htmlentities($client['scope']); ?></b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
