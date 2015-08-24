@@ -1,1 +1,31 @@
- 
+{
+    "name": "ledsinclouds/leds-oauth2",
+    "description": "OAuth2 module using http://oauth2.thephpleague.com/ library and Doctine2 for database setup for login with a social account. ",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2",
+        "leds-oauth2"
+    ],
+    "homepage": "https://github.com/ledsinclouds/LedsOAuth2.git",
+    "minimum-stability": "dev",
+    "repositories": [
+		{
+			"type": "vcs", 
+			"url": "https://github.com/ledsinclouds/LedsOAuth2.git"
+		}
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "doctrine/doctrine-orm-module": "dev-master",
+        "league/oauth2-client": "0.11.*",
+        "akrabat/akrabat-session": "dev-master",      
+        "rwoverdijk/assetmanager": "1.*" 		
+    },
+    "autoload": {
+        "psr-0": {
+            "LedsOAuth2\\": "src/"
+        }
+    }
+}   
