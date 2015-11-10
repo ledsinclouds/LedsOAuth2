@@ -8,7 +8,7 @@ return array(
 	),
 	'session' => array(
 		'name' => 'auth',
-		'save_path' => __DIR__ . '/../../../data/session'
+		'save_path' => __DIR__ . '/../../../../data/session'
 	),
     'asset_manager' => array(
         'resolver_configs' => array(
